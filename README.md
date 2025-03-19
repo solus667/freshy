@@ -5,4 +5,4 @@ git clone https://github.com/solus667/freshy
 cd freshy
 sh ./install.sh
 cd
-rm -IRf mintyfresh
+rm -IRf freshy
