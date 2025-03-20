@@ -8,6 +8,7 @@ if grep -q "Linux Mint" $release_file
 then
 	# Microsoft fonts
 	sudo apt install ttf-mscorefonts-installer spotify-client steam -y
+ 	flatpak install discord
 fi
 
 if grep -q "Debian" $release_file
