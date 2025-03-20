@@ -7,7 +7,7 @@ read VAR
 if [ $VAR -eq 0 ]
 then
   # Some shit
-  sudo apt install cmus cmatrix cbonsai yaru* video-downloader
+  sudo apt install cmus cmatrix cbonsai yaru* 
 elif [ $VAR -eq 1 ]
 then 
   #No
@@ -27,7 +27,7 @@ read VAR
 if [ $VAR -eq 0 ]
 then
   # FONTS
-  sudo apt install fonts-firacode fonts-cascadia-code fonts-jetbrains-mono fonts-mononoki fonts-roboto fonts-hack*
+  sudo apt install fonts-firacode  fonts-jetbrains-mono fonts-mononoki fonts-roboto fonts-hack*
 elif [ $VAR -eq 1 ]
 then
   echo "++ Fine be boring. ++"
