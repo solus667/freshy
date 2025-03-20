@@ -3,6 +3,7 @@ will make a debian one soon.
 
 ````
 sudo apt install git get -y
+cd
 git clone https://github.com/solus667/freshy
 cd freshy
 sh ./install.sh
