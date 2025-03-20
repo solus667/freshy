@@ -6,7 +6,7 @@ release_file=/etc/os-release
 
 if grep -q "Linux Mint" $release_file
 then
-	sudo apt install spotify-client steam -y
+	sudo apt install spotify-client steam video-downloader fonts-cascadia-code -y
 	sh ./sc/msfonts.sh
  	flatpak install discord
 fi
