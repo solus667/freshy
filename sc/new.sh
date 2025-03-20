@@ -7,7 +7,7 @@ release_file=/etc/os-release
 if grep -q "Linux Mint" $release_file
 then
 	sudo apt install spotify-client steam -y
-	sh ./msfonts.sh
+	sh ./sc/msfonts.sh
  	flatpak install discord
 fi
 
@@ -17,7 +17,7 @@ then
 	sudo dpkg --add-architecture i386
 	sudo apt update
 	sudo apt install steam-installer flatpak -y
-	sh ./msfonts.sh
+	sh ./sc/msfonts.sh
 	flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 	flatpak install pithos spotify discord
 	echo "Reboot at end of script"
