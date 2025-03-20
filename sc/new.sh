@@ -1,13 +1,13 @@
 #!/bin/bash
 
-sudo apt install gcc cmake git curl npm python3-venv vim 
+sudo apt install gcc cmake git curl npm python3-venv
 
 release_file=/etc/os-release
 
 if grep -q "Linux Mint" $release_file
 then
-	# Microsoft fonts
-	sudo apt install ttf-mscorefonts-installer spotify-client steam -y
+	sudo apt install spotify-client steam -y
+	sh ./msfonts.sh
  	flatpak install discord
 fi
 
@@ -16,7 +16,8 @@ then
 	# Same
 	sudo dpkg --add-architecture i386
 	sudo apt update
-	sudo apt install ttf-mscorefonts-installer steam-installer flatpak -y
+	sudo apt install steam-installer flatpak -y
+	sh ./msfonts.sh
 	flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 	flatpak install pithos spotify discord
 	echo "Reboot at end of script"
