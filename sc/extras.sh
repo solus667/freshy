@@ -21,7 +21,7 @@ fi
 echo ""
 echo ""
 echo "Fonts?"
-echo -n "Y-0 or N-1"
+echo -n "Y-0 or N-1: "
 read VAR
 
 if [ $VAR -eq 0 ]
