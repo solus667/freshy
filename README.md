@@ -2,6 +2,7 @@ fresh install script for mainly Linux Mint
 will make a debian one soon.
 
 ````
+sudo apt install git get -y
 git clone https://github.com/solus667/freshy
 cd freshy
 sh ./install.sh
