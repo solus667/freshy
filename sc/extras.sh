@@ -8,7 +8,7 @@ if [ $VAR -eq 0 ]
 then
   # Some shit
   sudo apt install cmus cmatrix cbonsai yaru* video-downloader
-elif [ $VAR -eq 0 ]
+elif [ $VAR -eq 1 ]
 then 
   #No
   echo "++ Fine then ++"
