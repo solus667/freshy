@@ -15,6 +15,7 @@ sleep 1
 echo ""
 echo "++ Download some software ++"
 sh ./sc/new.sh
+sh ./sc/extras.sh
 sh ./sc/chrome.sh
 sh ./sc/vscode.sh
 sh ./sc/ff.sh
