@@ -4,7 +4,7 @@
 uname -nr
 echo ""
 sleep 1
-echo "++ Welcome ${USER} ++"|pv -qL 10
+echo "++ Welcome ${USER} ++"
 echo ""
 echo ""
 sleep 1
