@@ -4,12 +4,11 @@
 uname -nr
 echo ""
 sleep 1
-echo "++ Welcome ${USER} ++"
+echo "++ Welcome ${USER} ++"|pv -qL 10
 echo ""
 echo ""
 sleep 1
 sudo apt update
-sudo apt install vim vim-scripts
 sudo apt upgrade -y
 sudo apt full-upgrade -y
 sleep 1
