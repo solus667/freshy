@@ -1,9 +1,9 @@
 #!/bin/bash
 
 echo "Chrome?"
+while true; do
 echo -n "0-yes 1-no: "
 read VAR
-
 if [ $VAR -eq 0 ] 
 then
   # Install the chrome
@@ -16,13 +16,17 @@ then
     echo ""
     echo "SUCCESS!"
     echo ""
+    break
 elif [ $VAR -eq 1 ]
 then
   #don't
     echo ""
     echo "NO CHROME FOR YOU"
     echo ""
+    break
 else
   # don't more
     echo "0 or 1 only dummy"
 fi
+done
+echo ""
