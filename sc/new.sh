@@ -29,6 +29,7 @@ then
  	snap refresh
  	snap install spotify discord steam
   	snap install nvim --classic
+   	sh ./msfonts.sh
    	sudo apt install fonts-cascadia-code video-downloader flatpak -y
  	flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
   	echo ""
