@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo apt install gcc cmake git curl npm python3-venv
+sudo apt install gcc cmake git curl npm python3-venv luarocks
 
 release_file=/etc/os-release
 
@@ -23,12 +23,15 @@ then
 	echo "Reboot at end of script"
 fi
 
-# if grep -q "Ubuntu" $release_file
-# then
-# 	# Why
-# 	snap refresh
-# 	snap install spotify discord
-# 	echo ""
-# 	echo "You're on your own."
-# 	echo ""
-# fi
+if grep -q "Ubuntu" $release_file
+then
+	# Stuff
+ 	snap refresh
+ 	snap install spotify discord steam
+  	snap install nvim --classic
+   	sudo apt install fonts-cascadia-code video-downloader flatpak -y
+ 	flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+  	echo ""
+ 	echo "Reload session to use flatpak"
+ 	echo ""
+fi
