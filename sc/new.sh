@@ -7,7 +7,7 @@ release_file=/etc/os-release
 if grep -q "Linux Mint" $release_file
 then
 	sudo apt install spotify-client fonts-cascadia-code video-downloader steam -y
-	sh ./msfonts.sh
+	sh ./sc/msfonts.sh
  	flatpak install discord
 fi
 
@@ -17,9 +17,9 @@ then
 	sudo dpkg --add-architecture i386
 	sudo apt update
 	sudo apt install steam-installer flatpak -y
-	sh ./msfonts.sh
+	sh ./sc/msfonts.sh
 	flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
-	flatpak install pithos spotify discord
+	flatpak install spotify discord
 	echo "Reboot at end of script"
 fi
 
@@ -29,8 +29,8 @@ then
  	snap refresh
  	snap install spotify discord steam
   	snap install nvim --classic
-   	sh ./msfonts.sh
-   	sudo apt install fonts-cascadia-code video-downloader flatpak -y
+   	sh ./sc/msfonts.sh
+   	sudo apt install fonts-cascadia-code video-downloader flatpak pithos -y
  	flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
   	echo ""
  	echo "Reload session to use flatpak"
