@@ -8,7 +8,9 @@ read VAR
 if [ $VAR -eq 0 ]
 then
   # Some shit
-  sudo apt install cmus cmatrix cbonsai yaru*
+  sudo apt install cmus cmatrix cbonsai yaru* -y
+  sudo git clone https://github.com/solus667/wallpaper /usr/share/backgrounds/walls
+  git clone https://github.com/solus667/wallpaper ~/Pictures/walls
   break
 elif [ $VAR -eq 1 ]
 then 
