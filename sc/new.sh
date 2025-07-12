@@ -21,7 +21,9 @@ then
 	sh ./sc/msfonts.sh
 	flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 	flatpak install spotify discord
-	echo "Reboot at end of script"
+ 	echo ""
+	echo "+++ YOU HAVE TO RELOAD SESSION TO USE FLATPAK AND SNAP +++"|nv -qL 20
+ 	echo ""
 fi
 
 if grep -q "Ubuntu" $release_file
