@@ -16,7 +16,7 @@ then
 	# Same
 	sudo dpkg --add-architecture i386
 	sudo apt update
-	sudo apt install steam-installer flatpak snapd -y
+	sudo apt install steam-installer flatpak snapd gnome-shell-extenstion-manager -y
  	sudo apt purge gnome-games
 	sh ./sc/msfonts.sh
 	flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
